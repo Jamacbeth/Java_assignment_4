@@ -1,4 +1,4 @@
-# LanguageSuggestion
+# Language Suggestion
 
 **LanguageSuggestion** is a beginner-friendly Java application that helps users choose the appropriate programming language for their project type. The program also provides starter templates with explanations, making it a learning tool as well as a quick project initializer.  
 
