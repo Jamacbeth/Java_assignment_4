@@ -1,0 +1,49 @@
+// JavaScript Web Starter - Mini Tutorial
+// Author: Your Name
+// Date: YYYY-MM-DD
+
+// ---------- Variables ----------
+let name = "Developer";    // string
+let age = 25;              // number
+let isActive = true;       // boolean
+
+// ---------- Conditional ----------
+if (isActive) {
+    console.log(name + " is active!");
+} else {
+    console.log(name + " is inactive.");
+}
+
+// ---------- Loops ----------
+for (let i = 0; i < 5; i++) {
+    console.log("Iteration: " + i);
+}
+
+// While loop
+let counter = 0;
+while (counter < 3) {
+    console.log("Counter: " + counter);
+    counter++;
+}
+
+// ---------- Arrays ----------
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log("First fruit:", fruits[0]);
+
+// ---------- Functions ----------
+function greetUser(user) {
+    console.log("Hello, " + user + "! Welcome to your web app.");
+}
+
+// ---------- Using the function ----------
+greetUser(name);
+
+// ---------- Why we use these ----------
+// let: declare a variable
+// string: text
+// number: numeric values
+// boolean: true/false checks
+// if/else: decisions
+// loops: repeat code
+// arrays: store multiple values
+// functions: reusable code

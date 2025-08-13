@@ -1,0 +1,53 @@
+// C# Game Starter - Mini Tutorial
+// Author: Your Name
+// Date: YYYY-MM-DD
+
+using System;
+
+class Game {
+    static void Main(string[] args) {
+
+        // ---------- Variables ----------
+        string playerName = "Hero"; // text
+        int health = 100;           // number
+        bool isAlive = true;        // true/false
+
+        // ---------- Conditional ----------
+        if (isAlive) {
+            Console.WriteLine(playerName + " is alive!");
+        } else {
+            Console.WriteLine(playerName + " is dead...");
+        }
+
+        // ---------- Loops ----------
+        for (int i = 0; i < 3; i++) {
+            Console.WriteLine("Turn " + (i + 1));
+        }
+
+        int counter = 0;
+        while (counter < 2) {
+            Console.WriteLine("Counter: " + counter);
+            counter++;
+        }
+
+        // ---------- Arrays ----------
+        string[] enemies = {"Goblin", "Orc", "Dragon"};
+        Console.WriteLine("First enemy: " + enemies[0]);
+
+        // ---------- Methods ----------
+        GreetPlayer(playerName);
+
+        // ---------- Why we use these ----------
+        // string: text
+        // int: numbers
+        // bool: true/false
+        // if/else: make decisions
+        // for/while loops: repeat code
+        // arrays: store multiple values
+        // methods: reusable code
+    }
+
+    static void GreetPlayer(string name) {
+        Console.WriteLine("Hello, " + name + "! Welcome to your game.");
+    }
+}

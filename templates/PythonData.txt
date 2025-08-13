@@ -1,0 +1,44 @@
+# Python Data Starter - Mini Tutorial
+# Author: Your Name
+# Date: YYYY-MM-DD
+
+# ---------- Variables ----------
+name = "Alice"       # string
+score = 95           # integer
+is_active = True     # boolean
+
+# ---------- Conditional ----------
+if is_active:
+    print(f"{name} is active!")
+else:
+    print(f"{name} is inactive.")
+
+# ---------- Loop ----------
+for i in range(5):
+    print("Iteration:", i)
+
+# While loop
+counter = 0
+while counter < 3:
+    print("Counter:", counter)
+    counter += 1
+
+# ---------- Lists ----------
+fruits = ["Apple", "Banana", "Cherry"]
+print("First fruit:", fruits[0])  # access by index
+
+# ---------- Function ----------
+def greet_user(user):
+    print(f"Hello, {user}! Welcome to your data project.")
+
+# ---------- Using the function ----------
+greet_user(name)
+
+# ---------- Why we use these ----------
+# int: numbers for math or counting
+# str: text for display or processing
+# bool: true/false checks
+# if/else: decision making
+# loops: repeat code efficiently
+# list: store multiple values in one variable
+# function: reusable code
