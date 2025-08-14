@@ -17,7 +17,7 @@ public class LanguageSuggestionGUI {
         templateFiles.put("data", "templates/PythonData.txt");
 
         // Map project type to text color
-        textColors.put("web", new Color(64, 64, 64)); // dark gray
+        textColors.put("web", new Color(135, 206, 250)); // light sky blue
         textColors.put("mobile", Color.YELLOW);
         textColors.put("game", Color.RED);
         textColors.put("data", Color.GREEN);
@@ -59,13 +59,30 @@ public class LanguageSuggestionGUI {
             JButton btn = new JButton(type.toUpperCase());
             btn.setFocusPainted(false);
             // Keep the button colors as they currently are
-            if (type.equals("web")) btn.setBackground(new Color(70, 130, 180)); // steel blue for web button
+            if (type.equals("web")) btn.setBackground(new Color(70, 130, 180)); // steel blue
             else if (type.equals("mobile")) btn.setBackground(Color.YELLOW);
             else if (type.equals("game")) btn.setBackground(Color.RED);
             else if (type.equals("data")) btn.setBackground(Color.GREEN);
             btn.addActionListener(e -> loadTemplate(type, templateArea));
             buttonsPanel.add(btn);
         }
+
+        // Copy button
+        JButton copyBtn = new JButton("COPY TO CLIPBOARD");
+        copyBtn.setBackground(Color.LIGHT_GRAY);
+        copyBtn.setFocusPainted(false);
+        copyBtn.addActionListener(e -> {
+            String text = templateArea.getText();
+            if (!text.isEmpty()) {
+                Toolkit.getDefaultToolkit()
+                       .getSystemClipboard()
+                       .setContents(new java.awt.datatransfer.StringSelection(text), null);
+                JOptionPane.showMessageDialog(frame, "Template copied to clipboard!");
+            } else {
+                JOptionPane.showMessageDialog(frame, "No template to copy.", "Warning", JOptionPane.WARNING_MESSAGE);
+            }
+        });
+        buttonsPanel.add(copyBtn);
 
         panel.add(buttonsPanel, BorderLayout.NORTH);
         frame.setVisible(true);
