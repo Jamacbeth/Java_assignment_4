@@ -32,6 +32,26 @@
 git clone https://github.com/your-username/LanguageSuggestion.git
 cd LanguageSuggestion
 
+
+1## 🖥️ Program in Action
+
+Below are screenshots showing the program running and demonstrating its core features:
+
+### 🌐 Web Project Suggestion (JavaScript)
+![Web Feature](assets/web.png)
+
+### 📊 Data Analysis Suggestion (Python)
+![Data Feature](assets/data.png)
+
+### 📱 Mobile Project Suggestion (Java)
+![Mobile Feature](assets/mobile.png)
+
+### 🎮 Game Project Suggestion (C#)
+![Game Feature](assets/game.png)
+
+### 📋 Clipboard Functionality (Planned Feature)
+![Clipboard Feature](assets/clipboard.png)
+
 Compile the Java program:
 
 bash
