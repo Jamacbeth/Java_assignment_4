@@ -1,92 +1,57 @@
-# Language Suggestion
+Language Suggestion
+Language Suggestion is a beginner-friendly Java application that helps users choose the right programming language based on their project type. It also provides starter templates with explanations, making it both a learning tool and a quick-start project initializer.
 
-**Language Suggestion** is a beginner-friendly Java application that helps users choose the appropriate programming language for their project type. The program also provides starter templates with explanations, making it a learning tool as well as a quick project initializer.  
+Features
+Suggests a programming language based on the selected project type:
 
----
+Web → JavaScript
 
-## Features
+Mobile → Java
 
-- Suggests a programming language based on project type:  
-  - Web → JavaScript  
-  - Mobile → Java  
-  - Game → C#  
-  - Data Analysis → Python  
-- Provides in-depth starter templates with comments and real-world examples  
-- Color-coded text output for each project type for easy reading  
-- Runs in the terminal or via a desktop launcher (Mac `.command`)  
-- Multi-run support: users can try multiple project types without restarting  
+Game → C#
 
----
+Data Analysis → Python
 
-## Getting Started
+Provides starter templates with comments and real-world examples
 
-### Prerequisites
+Displays color-coded output for each project type to improve readability
 
-- Java JDK installed on your system  
-- macOS or Windows terminal for running the CLI version  
+Runs in the terminal or via a desktop launcher for macOS
 
-### Running the Program
+Supports multiple selections without restarting the program
 
-1. Clone the repository:  
-```bash
-git clone https://github.com/your-username/LanguageSuggestion.git
-cd LanguageSuggestion
+Getting Started
+To use Language Suggestion, ensure that the Java JDK is installed on your system. The program runs in any terminal environment on macOS, Windows, or Linux.
 
+Clone the repository from GitHub
 
-1## 🖥️ Program in Action
+Navigate to the project directory
 
-Below are screenshots showing the program running and demonstrating its core features:
+Compile the Java file using javac LanguageSuggestion.java
 
-### 🌐 Web Project Suggestion (JavaScript)
-![Web Feature](assets/web.png)
+Run the program using java LanguageSuggestion
 
-### 📊 Data Analysis Suggestion (Python)
-![Data Feature](assets/data.png)
-
-### 📱 Mobile Project Suggestion (Java)
-![Mobile Feature](assets/mobile.png)
-
-### 🎮 Game Project Suggestion (C#)
-![Game Feature](assets/game.png)
-
-### 📋 Clipboard Functionality (Planned Feature)
-![Clipboard Feature](assets/clipboard.png)
-
-Compile the Java program:
-
-bash
-Copy
-Edit
-javac LanguageSuggestion.java
-Run the program in terminal:
-
-bash
-Copy
-Edit
-java LanguageSuggestion
-Optionally, on macOS, use the .command file to launch the program with a double-click.
+macOS users can optionally use the .command file included in the project to launch the program with a double-click.
 
 Templates
-All templates are located in the templates folder and include:
+Starter templates are located in the templates folder and include:
 
-JavaMobile.txt – Starter template for mobile projects
+JavaMobile.txt – for mobile app development
 
-JavaScriptWeb.txt – Starter template for web projects
+JavaScriptWeb.txt – for web development
 
-CSharpGame.txt – Starter template for game projects
+CSharpGame.txt – for game development
 
-PythonData.txt – Starter template for data analysis projects
+PythonData.txt – for data analysis
 
-Each template contains explanations of core programming concepts and practical examples.
+Each template contains explanations of core programming concepts, practical examples, and inline comments to guide beginners.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Future Enhancements
-Add copy-to-clipboard functionality for templates
-
 Include interactive exercises for beginners
 
-Expand templates to cover more languages and frameworks
+Expand template library to support additional languages and frameworks
 
-Implement a GUI version with color-coded sections
+Develop a GUI version with improved layout and readability
