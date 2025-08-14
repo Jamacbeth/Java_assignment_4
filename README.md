@@ -1,4 +1,6 @@
 Language Suggestion
+
+
 Language Suggestion is a beginner-friendly Java application that helps users choose the right programming language based on their project type. It also provides starter templates with explanations, making it both a learning tool and a quick-start project initializer.
 
 Features
